@@ -24,7 +24,9 @@ Package.onUse(function (api) {
   ], 'server');
   api.addFiles([
     'client/templates/about/about.html',
-    'client/templates/about/about.css'
+    'client/templates/about/about.css',
+    'client/templates/privacy/privacy.html',
+    'client/templates/privacy/privacy.css'
     ], 'client');
 
   api.addAssets([
