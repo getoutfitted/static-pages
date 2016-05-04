@@ -38,5 +38,6 @@ Package.onUse(function (api) {
     'public/images/paul.jpg',
     'public/images/logo.jpg',
     'public/images/large-go.jpg',
+    'public/images/hero.jpg'
   ], 'client');
 });
