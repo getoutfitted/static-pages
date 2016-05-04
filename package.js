@@ -14,8 +14,27 @@ Package.onUse(function (api) {
   api.use('base64');
   api.use('underscore');
   api.use('standard-minifiers');
-  api.use('reactioncommerce:core@0.12.0');
+  api.use('reactioncommerce:core');
   api.use('reactioncommerce:reaction-router');
   api.use('reactioncommerce:reaction-collections');
   api.use('momentjs:moment@2.10.6');
+
+  api.addFiles([
+    'server/registry.js'
+  ], 'server');
+  api.addFiles([
+    'client/templates/about/about.html',
+    'client/templates/about/about.css'
+    ], 'client');
+
+  api.addAssets([
+    'public/images/julian.jpg',
+    'public/images/mike.jpg',
+    'public/images/spencer.jpg',
+    'public/images/adam.jpg',
+    'public/images/nicole.jpg',
+    'public/images/paul.jpg',
+    'public/images/logo.jpg',
+    'public/images/large-go.jpg',
+  ], 'client');
 });
