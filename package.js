@@ -18,6 +18,7 @@ Package.onUse(function (api) {
   api.use('reactioncommerce:reaction-router');
   api.use('reactioncommerce:reaction-collections');
   api.use('momentjs:moment@2.10.6');
+  api.use('getoutfitted:press-feed');
 
   api.addFiles([
     'server/registry.js'
@@ -26,7 +27,9 @@ Package.onUse(function (api) {
     'client/templates/about/about.html',
     'client/templates/about/about.css',
     'client/templates/privacy/privacy.html',
-    'client/templates/privacy/privacy.css'
+    'client/templates/privacy/privacy.css',
+    'client/templates/press/press.html',
+    'client/templates/press/press.js'
     ], 'client');
 
   api.addAssets([
@@ -40,6 +43,7 @@ Package.onUse(function (api) {
     'public/images/large-go.jpg',
     'public/images/hero.jpg',
     'public/images/anthony.jpg',
-    'public/images/amber.jpg'
+    'public/images/amber.jpg',
+    'public/images/press-lead.jpg'
   ], 'client');
 });

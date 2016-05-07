@@ -23,11 +23,16 @@ ReactionCore.registerPackage({
     name: 'getoutfittedAbout',
     template: 'getoutfittedAbout',
     workflow: 'goPagesWorkflow',
-    audience: ["guest", "anonymous"]
+    permissions: ["guest", "anonymous"]
   },{
     route: '/privacy',
     name: 'getoutfittedPrivacyPolicy',
     template: 'getoutfittedPrivacyPolicy',
+    workflow: 'goPagesWorkflow'
+  }, {
+    route: '/press',
+    name: 'getoutfittedPressPage',
+    template: 'getoutfittedPressPage',
     workflow: 'goPagesWorkflow'
   }],
   layout: [{
