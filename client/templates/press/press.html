@@ -1,0 +1,24 @@
+<template name='getoutfittedPressPage'>
+  <div class="fullwidth hero">
+    <div class='hero-press hero-container text-center'>
+      <h1>Press</h1>
+    </div>
+  </div>
+  <div class='container'>
+    {{#if pressFeedEnabled}}
+      <div class='row text-center'>
+        <h1>Recent Coverage</h1>
+        <hr>
+      </div>
+      <div class='row'>
+        {{> pressFeedFull }}
+      </div>
+    {{/if}}
+    <div class='row text-center'>
+      <h1>PR Requests & Media Kit</h1>
+      <hr>
+      <p>Looking for our Media Kit? You can download it <a target='_blank' href="https://www.dropbox.com/sh/1dsxgkbs6c05s21/AAA4EodO8otCajnA0d0QydTla?dl=0">here</a></p>
+      <p>Want to get in touch? Shoot us an email: <a href="mailto:press@getoutfitted.com?subject=GetOutfitted PR Inquiry">press@getoutfitted.com</a></p>
+    </div>
+  </div>
+</template>

@@ -4,14 +4,12 @@ ReactionCore.registerPackage({
   icon: 'fa fa-file-text',
   autoEnable: false,
   registry: [{
-    // route: '/dashboard/staticPages',
     provides: 'dashboard',
-    // name: 'staticPages',
+    name: 'staticPages',
     label: 'Static Pages',
     description: 'Getoutfitted\'s Static Pages',
     container: 'getoutfitted',
     icon: 'fa fa-file-text',
-    // template: 'staticPagesDashboard',
     workflow: 'coreWorkflow',
     priority: 2
   }, {
@@ -24,13 +22,22 @@ ReactionCore.registerPackage({
     route: '/about',
     name: 'getoutfittedAbout',
     template: 'getoutfittedAbout',
+    workflow: 'goPagesWorkflow',
+    permissions: ["guest", "anonymous"]
+  },{
+    route: '/privacy',
+    name: 'getoutfittedPrivacyPolicy',
+    template: 'getoutfittedPrivacyPolicy',
     workflow: 'goPagesWorkflow'
-    // permissions: [{label: 'guest', permission: 'guest'}],
+  }, {
+    route: '/press',
+    name: 'getoutfittedPressPage',
+    template: 'getoutfittedPressPage',
+    workflow: 'goPagesWorkflow'
   }],
   layout: [{
     workflow: 'goPagesWorkflow',
     layout: 'coreLayout',
-    //audience: ["guest", "anonymous"]
     theme: 'default',
     enabled: true,
     structure: {
@@ -43,10 +50,5 @@ ReactionCore.registerPackage({
       dashboardHeaderControls: '',
       adminControlsFooter: ''
     }
-  }, {
-    template: "getoutfittedAbout",
-    label: "About",
-    workflow: "goPagesWorkflow",
-    audience: ["guest", "anonymous"]
   }]
 });
