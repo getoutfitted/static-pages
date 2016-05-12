@@ -23,8 +23,7 @@ ReactionCore.registerPackage({
     name: 'getoutfittedAbout',
     template: 'getoutfittedAbout',
     workflow: 'goPagesWorkflow',
-    permissions: ["guest", "anonymous"]
-  },{
+  }, {
     route: '/privacy',
     name: 'getoutfittedPrivacyPolicy',
     template: 'getoutfittedPrivacyPolicy',
