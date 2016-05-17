@@ -2,7 +2,7 @@ ReactionCore.registerPackage({
   label: 'Getoutfitted Static Pages',
   name: 'getoutfitted-static-pages',
   icon: 'fa fa-file-text',
-  autoEnable: false,
+  autoEnable: true,
   registry: [{
     provides: 'dashboard',
     name: 'staticPages',
