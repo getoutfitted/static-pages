@@ -33,7 +33,19 @@ ReactionCore.registerPackage({
     name: 'getoutfittedPressPage',
     template: 'getoutfittedPressPage',
     workflow: 'goPagesWorkflow'
-  }],
+  }, {
+    route: '/nb',
+    name: 'newBelgium',
+    template: 'newBelgium',
+    workflow: 'goPagesWorkflow'
+  },
+  {
+    route: '/NB',
+    name: 'newBelgium',
+    template: 'newBelgium',
+    workflow: 'goPagesWorkflow'
+  }
+  ],
   layout: [{
     workflow: 'goPagesWorkflow',
     layout: 'coreLayout',

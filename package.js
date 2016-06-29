@@ -29,7 +29,9 @@ Package.onUse(function (api) {
     'client/templates/privacy/privacy.html',
     'client/templates/privacy/privacy.css',
     'client/templates/press/press.html',
-    'client/templates/press/press.js'
+    'client/templates/press/press.js',
+    'client/templates/newBelgium/newBelgium.html',
+    'client/templates/newBelgium/newBelgium.js'
     ], 'client');
 
   api.addAssets([
@@ -44,6 +46,7 @@ Package.onUse(function (api) {
     'public/images/hero.jpg',
     'public/images/anthony.jpg',
     'public/images/amber.jpg',
-    'public/images/press-lead.jpg'
+    'public/images/press-lead.jpg',
+    'public/images/newBelgiumBanner.jpg'
   ], 'client');
 });
