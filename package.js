@@ -33,7 +33,8 @@ Package.onUse(function (api) {
     'client/templates/press/press.js',
     'client/templates/newBelgium/newBelgium.html',
     'client/templates/winter/winter.html',
-    'client/templates/winter/winter.js'
+    'client/templates/winter/winter.js',
+    'client/templates/group/group.html'
     ], 'client');
 
   api.addAssets([
@@ -50,6 +51,7 @@ Package.onUse(function (api) {
     'public/images/amber.jpg',
     'public/images/press-lead.jpg',
     'public/images/newBelgiumBanner.jpg',
-    'public/images/winter.jpg'
+    'public/images/winter.jpg',
+    'public/images/group-sales.jpg'
   ], 'client');
 });

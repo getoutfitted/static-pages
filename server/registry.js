@@ -48,6 +48,11 @@ ReactionCore.registerPackage({
     name: 'winter',
     template: 'winter',
     workflow: 'goPagesWorkflow'
+  }, {
+    route: '/groups',
+    name: 'groups',
+    template: 'groups',
+    workflow: 'goPagesWorkflow'
   }
   ],
   layout: [{
