@@ -33,7 +33,28 @@ ReactionCore.registerPackage({
     name: 'getoutfittedPressPage',
     template: 'getoutfittedPressPage',
     workflow: 'goPagesWorkflow'
-  }],
+  }, {
+    route: '/nb',
+    name: 'newBelgium',
+    template: 'newBelgium',
+    workflow: 'goPagesWorkflow'
+  }, {
+    route: '/NB',
+    name: 'newBelgium',
+    template: 'newBelgium',
+    workflow: 'goPagesWorkflow'
+  }, {
+    route: '/winter',
+    name: 'winter',
+    template: 'winter',
+    workflow: 'goPagesWorkflow'
+  }, {
+    route: '/groups',
+    name: 'groups',
+    template: 'groups',
+    workflow: 'goPagesWorkflow'
+  }
+  ],
   layout: [{
     workflow: 'goPagesWorkflow',
     layout: 'coreLayout',
