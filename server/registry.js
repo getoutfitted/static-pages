@@ -38,11 +38,15 @@ ReactionCore.registerPackage({
     name: 'newBelgium',
     template: 'newBelgium',
     workflow: 'goPagesWorkflow'
-  },
-  {
+  }, {
     route: '/NB',
     name: 'newBelgium',
     template: 'newBelgium',
+    workflow: 'goPagesWorkflow'
+  }, {
+    route: '/winter',
+    name: 'winter',
+    template: 'winter',
     workflow: 'goPagesWorkflow'
   }
   ],

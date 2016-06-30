@@ -19,6 +19,7 @@ Package.onUse(function (api) {
   api.use('reactioncommerce:reaction-collections');
   api.use('momentjs:moment@2.10.6');
   api.use('getoutfitted:press-feed');
+  api.use('getoutfitted:reaction-klaviyo');
 
   api.addFiles([
     'server/registry.js'
@@ -31,7 +32,8 @@ Package.onUse(function (api) {
     'client/templates/press/press.html',
     'client/templates/press/press.js',
     'client/templates/newBelgium/newBelgium.html',
-    'client/templates/newBelgium/newBelgium.js'
+    'client/templates/winter/winter.html',
+    'client/templates/winter/winter.js'
     ], 'client');
 
   api.addAssets([
@@ -47,6 +49,7 @@ Package.onUse(function (api) {
     'public/images/anthony.jpg',
     'public/images/amber.jpg',
     'public/images/press-lead.jpg',
-    'public/images/newBelgiumBanner.jpg'
+    'public/images/newBelgiumBanner.jpg',
+    'public/images/winter.jpg'
   ], 'client');
 });
